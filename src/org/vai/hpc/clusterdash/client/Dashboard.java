@@ -53,7 +53,7 @@ public class Dashboard extends Composite
 		final ClusterGuage nodespct = new ClusterGuage("Node utilization", "Percent Nodes currently being used");
 		final AreaChart loadavg = new AreaChart("Total CPU Load", "CPU Load over the last hour ",false,1800.0);
 		final WidgetMonitor runningJobs = new WidgetMonitor("Job Status", "Cluster Job Scheduler Queue Status");
-		final TextMonitor allTimeJobs = new TextMonitor("Jobs Completed","Number of Jobs completed since July 2016");
+		final TextMonitor allTimeJobs = new TextMonitor("Jobs Completed","Number of Jobs completed since April 2017");
 		final WidgetMonitor topUsers = new WidgetMonitor("Top Active Users","The top active users online right now");
 		final AreaChart diskrate = new AreaChart("Data Writes", "GigaBytes per minute over the last hour",true,0.0);
 		
