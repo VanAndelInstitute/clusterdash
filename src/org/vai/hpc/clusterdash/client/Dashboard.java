@@ -100,10 +100,14 @@ public class Dashboard extends Composite
 								totalcores += d.getCoresAvail();
 								diskRateKB = d.getKilobytesDiskActivtiy();
 								
-								if(d.getCoresUsed() == null || d.getJobIds() == null || d.getUsers() == null)
-									continue;
 								
-								//for(int i : d.getCoresUsed())
+								
+								if(d.getCoresUsed() == null || d.getJobIds() == null || d.getUsers() == null)
+								{
+									if(d.getLoad() > 0.0)
+										usedcores += d.coresAvail;
+									continue;
+								}
 								usedcores += d.coresAvail;
 															
 								for(int i : d.getJobIds())
