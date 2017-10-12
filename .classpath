@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gxt4-theme-triton.jar"/>
 	<classpathentry kind="lib" path="war/WEB-INF/lib/gxt4.jar"/>
 	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER/gwt-2.8.0"/>
+	<classpathentry kind="con" path="com.gwtplugins.gwt.eclipse.core.GWT_CONTAINER/GWT 2.8.1"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
