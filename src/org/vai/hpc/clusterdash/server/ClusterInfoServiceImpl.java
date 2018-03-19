@@ -46,7 +46,13 @@ public class ClusterInfoServiceImpl extends RemoteServiceServlet implements Clus
 				{
 					String[] diskHistStr = line.split("\\s+");
 					for(String s : diskHistStr)
-						diskHist.add(Integer.parseInt(s));
+						try {
+							diskHist.add(Integer.parseInt(s));
+						} catch (Exception e)
+					{
+							diskHist.add(0);
+					}
+						
 				}
 				else
 				{

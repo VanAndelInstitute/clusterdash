@@ -100,15 +100,12 @@ public class Dashboard extends Composite
 								totalcores += d.getCoresAvail();
 								diskRateKB = d.getKilobytesDiskActivtiy();
 								
-								
+								if(d.getLoad() > 0.05 ||   d.getJobIds() != null)
+									usedcores += d.coresAvail;
 								
 								if(d.getCoresUsed() == null || d.getJobIds() == null || d.getUsers() == null)
-								{
-									if(d.getLoad() > 0.0)
-										usedcores += d.coresAvail;
-									continue;
-								}
-								usedcores += d.coresAvail;
+										continue;
+								
 															
 								for(int i : d.getJobIds())
 								{
@@ -155,6 +152,7 @@ public class Dashboard extends Composite
 							}
 							preloadAreaChart=false;
 						}
+					
 						loadavg.addValue(totalLoad);
 						diskrate.addValue((0.0 + diskRateKB) / 1000000.0, "" + (int)((0.0 + diskRateKB) / 1000000.0) + " GB/min");
 						allTimeJobs.setMeasurement("" + lastJob);
