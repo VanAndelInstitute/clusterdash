@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+
+*{
+      margin: 0;
+      padding: 0;
+    }
+
+
+.row {
+    text-align: center;
+}
+
+.logoimg {
+	height: 15%;
+}
+
+
+table { 
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+.hpc3header {
+
+    white-space: nowrap;
+    font-size: 34px;
+    text-align: center;
+    font-family: "Montserrat","Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: top;
+}
+
+
+hr.style1 {
+	border-top: 10px solid #0d5d9d;
+}
+
+
+.label {
+
+    white-space: nowrap;
+    font-size: 30px;
+    font-family: "Montserrat","Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: top;
+}
+
+.label2 {
+    font-size: 18px;
+    font-family: "Montserrat","Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    vertical-align: top;
+}
+
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+  
+  
+  
+  
+  a:link {
+    color: #0d5d9d;
+}
+
+/* visited link */
+a:visited {
+    color:#0d5d9d;
+}
+
